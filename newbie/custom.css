@@ -1,0 +1,29 @@
+:root{
+  --nav-bg-colour: #9e4485;
+}
+
+/* Override Navbar BG properties */
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color:var(--nav-bg-colour);
+    color: #fff;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+  }
+
+  /* Override Brand logo positioning  */
+.navbar-brand{
+  float: left;
+  min-height: 55px;
+  padding: 0 15px 5px;
+}
+
+/* Make nav element's colour scheme compatible with the nav bar */
+.navbar-inverse .navbar-nav .active a, 
+.navbar-inverse .navbar-nav .active a:focus, 
+.navbar-inverse .navbar-nav .active a:hover{
+  color: #fff;
+  background-color: var(--nav-bg-colour);
+}
